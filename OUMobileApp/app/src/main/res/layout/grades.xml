@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Button
+        android:id="@+id/btnSetSemester"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="11dp"
+        android:layout_marginTop="22dp"
+        android:onClick="setSemester"
+        android:text="Select Semester"
+        app:layout_constraintEnd_toStartOf="@+id/btnGrades"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <Button
+        android:id="@+id/btnGrades"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="22dp"
+        android:layout_marginTop="22dp"
+        android:onClick="getGrades"
+        android:text="Get Grades"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnSetSemester"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/tvClass1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvGrade2"
+        app:layout_constraintEnd_toStartOf="@+id/tvClass2"
+        app:layout_constraintStart_toStartOf="@+id/tvClass2"
+        app:layout_constraintTop_toBottomOf="@+id/tvSemester" />
+
+    <TextView
+        android:id="@+id/tvGrade1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toStartOf="@+id/tvGrade2"
+        app:layout_constraintStart_toStartOf="@+id/tvGrade2"
+        app:layout_constraintTop_toBottomOf="@+id/tvSemester" />
+
+    <TextView
+        android:id="@+id/tvClass2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        app:layout_constraintEnd_toStartOf="@+id/tvClass3"
+        app:layout_constraintStart_toStartOf="@+id/tvClass3"
+        app:layout_constraintTop_toBottomOf="@+id/tvClass1" />
+
+    <TextView
+        android:id="@+id/tvGrade2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        app:layout_constraintEnd_toStartOf="@+id/tvGrade3"
+        app:layout_constraintStart_toStartOf="@+id/tvGrade3"
+        app:layout_constraintTop_toBottomOf="@+id/tvGrade1" />
+
+    <TextView
+        android:id="@+id/tvClass3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="14dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvClass2" />
+
+    <TextView
+        android:id="@+id/tvGrade3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="14dp"
+        app:layout_constraintStart_toEndOf="@+id/tvClass3"
+        app:layout_constraintTop_toBottomOf="@+id/tvGrade2" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="Select your semester then get your grades!"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSemester"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnSetSemester"
+        app:layout_constraintStart_toEndOf="@+id/btnSetSemester"
+        app:layout_constraintTop_toBottomOf="@+id/btnSetSemester" />
+</android.support.constraint.ConstraintLayout>
